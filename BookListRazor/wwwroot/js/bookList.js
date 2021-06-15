@@ -11,7 +11,7 @@ function loadDataTable() {
             "type": "GET",
             "datatype":"json"
         },
-        "columns" [
+        "columns" :[
             { "data": "name", "width": "30%" },
             { "data": "author", "width": "30%" },
             { "data": "isbn", "width": "30%" },
@@ -19,9 +19,45 @@ function loadDataTable() {
                 "data": "id",
                 "render": function (data) {
                     return `<div class=text-center>
-</div>`
-                }
+                <a href="/BookList/Upset?id=${data}" class="btn btn-success text-white" style='cursor:pointer;width:70px'>
+                    Edit </a>
+                <a  class="btn btn-danger text-white" style='cursor:pointer;width:70px'
+                    onclick=Delete('/api/book?id='+${data})>
+                    Delete </a>
+                </div>`;
+                },"width":"30%"
             }
-        ]
+        ],
+        "language": {
+            "emptyTable":"no data found"
+        },
+        "width":"100%"
     })
+}
+
+function Delete(url) {
+    swal({
+        title: "Are You Sure",
+        text: "Once deleted, you will not Enable to recover",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    }).then((willDelete) => {
+        if (willDelete) {
+            $.ajax({
+                type: "DELETE",
+                url: url,
+                success: function (data) {
+                    if (data.success) {
+                        toastr.success(data.message);
+                        dataTable.ajax.reload();
+                    }
+                    else {
+                        toastr.error(data.message);
+                    }
+
+                }
+            });
+        };
+    });
 }

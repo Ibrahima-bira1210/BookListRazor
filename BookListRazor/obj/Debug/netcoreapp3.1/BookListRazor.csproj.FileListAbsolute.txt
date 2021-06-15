@@ -8,7 +8,6 @@ C:\Users\ifaye\Desktop\BookListRazor\BookListRazor\bin\Debug\netcoreapp3.1\BookL
 C:\Users\ifaye\Desktop\BookListRazor\BookListRazor\bin\Debug\netcoreapp3.1\BookListRazor.pdb
 C:\Users\ifaye\Desktop\BookListRazor\BookListRazor\bin\Debug\netcoreapp3.1\BookListRazor.Views.dll
 C:\Users\ifaye\Desktop\BookListRazor\BookListRazor\bin\Debug\netcoreapp3.1\BookListRazor.Views.pdb
-C:\Users\ifaye\Desktop\BookListRazor\BookListRazor\obj\Debug\netcoreapp3.1\BookListRazor.csproj.AssemblyReference.cache
 C:\Users\ifaye\Desktop\BookListRazor\BookListRazor\obj\Debug\netcoreapp3.1\BookListRazor.AssemblyInfoInputs.cache
 C:\Users\ifaye\Desktop\BookListRazor\BookListRazor\obj\Debug\netcoreapp3.1\BookListRazor.AssemblyInfo.cs
 C:\Users\ifaye\Desktop\BookListRazor\BookListRazor\obj\Debug\netcoreapp3.1\BookListRazor.csproj.CoreCompileInputs.cache
@@ -372,3 +371,4 @@ C:\Users\ifaye\Desktop\BookListRazor\BookListRazor\bin\Debug\netcoreapp3.1\runti
 C:\Users\ifaye\Desktop\BookListRazor\BookListRazor\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Index.cshtml.g.cs
 C:\Users\ifaye\Desktop\BookListRazor\BookListRazor\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Create.cshtml.g.cs
 C:\Users\ifaye\Desktop\BookListRazor\BookListRazor\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Edit.cshtml.g.cs
+C:\Users\ifaye\Desktop\BookListRazor\BookListRazor\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Upset.cshtml.g.cs
