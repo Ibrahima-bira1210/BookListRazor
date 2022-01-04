@@ -1,0 +1,29 @@
+name: VariableDemo
+on: [push]
+env:
+  user_name: "Ibrahima"
+  demo_name: "Variable Demo"
+jobs:
+  VariableUsageJob:
+    runs-on: ubuntu_latest
+    env:
+      job_var: "Job variable value"
+    steps:
+    - name: Using workflows variable
+      run: echo Hello, $user_name
+           Welcome to $demo_name!
+           here is a job variable $job_var
+           here is a step variable $step_var
+      env:
+        step_var: "step variable value"
+    - name: Set user_name Variable
+      run: echo "::set-env name=user_name::IbrahimaBiraneFaye"
+    - name: Set new_variabble
+      run: echo "::set-env name:new_var::newVarValue"
+    - name: Using Variable
+      run: echo Hello, $user_name
+           Welcome to $demo_variable
+           here is job variable $job_var
+           here is new variable $new_var
+
+
