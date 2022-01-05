@@ -1,5 +1,9 @@
 name: VariableDemo
-on: [push]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 env:
   user_name: "Ibrahima"
   demo_name: "Variable Demo"
